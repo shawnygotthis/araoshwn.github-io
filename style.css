@@ -563,7 +563,7 @@ header.sticky{
 @media (max-width: 370px) {
     
     .home{
-        height: 100vh;
+        height: 112vh;
     }
     .about-text h4{
         font-size: 15px;

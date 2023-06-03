@@ -555,7 +555,7 @@ header.sticky{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 0rem;
     background: var(--bg-color);
     }
 }

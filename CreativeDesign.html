@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio: Creative Design</title>
+    <!--custom css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="sgt.png" type="image/x-icon">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* THE ROOT PARA SA COLOR FORMAT */
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --secont-color: #ccc;
+    --text-color: #fff;
+    --main-color: #215BF0;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+    </style>
+</head>
+<body>
+    <!--header design-->
+    <header>
+        <a href="index.html" class="logo">Shawn<span>Got</span>This.</a>
+
+    </header>
+    <div class="services-content">
+        <div class="box">
+            <div class="s-icons">
+                <i class='bx bxs-pencil'></i>
+            </div>
+            <h3><span> Unleashing Creativity: My Journey as an Intermediate Video and Photo Editor!</span></h3>
+            <p>
+                As a fast and adaptive learner, I have dived into the world of video and photo editing, exploring various tools and techniques to bring my creative visions to life. From Canva to Photoshop, CapCut to Filmora, I have honed my skills to intermediate level proficiency. Join me as I recount my journey as a video and photo editor, constantly expanding my knowledge and embracing new editing tools. <br><br>
+                
+                <span>The Gateway to Visual Design:</span>
+                My journey began with Canva, a versatile and user-friendly design platform. With its intuitive interface and vast collection of templates, Canva served as my introduction to graphic design and editing. I familiarized myself with its features, mastering tasks such as creating social media graphics, presentations, and basic photo editing. Canva allowed me to explore different design elements, experiment with layouts, and develop an eye for visual aesthetics. <br><br>
+                
+                <span>The Powerhouse of Editing:</span>
+                To further enhance my editing skills, I ventured into Adobe Photoshop, a professional-grade software widely used in the industry. Photoshop opened up a whole new world of possibilities, enabling me to manipulate and enhance images with precision. I delved into advanced techniques such as retouching, color correction, compositing, and creating stunning visual effects. With Photoshop, I gained the ability to bring out the best in every image and produce captivating visuals. <br> <br>
+                
+                <span>The Art of Video Editing:</span>
+                As my interest expanded to video editing, I explored CapCut and Filmora, popular video editing tools known for their user-friendly interfaces and powerful features. These tools allowed me to edit and refine footage, apply transitions and effects, add text and music, and export high-quality videos. I learned the art of storytelling through editing, mastering techniques like pacing, rhythm, and seamless continuity. CapCut and Filmora became my go-to tools for creating engaging and polished video content. <br><br>
+                
+                <span> Embracing Adaptability:</span>
+                Being a fast and adaptive learner, I never limited myself to a single editing tool. I continuously explore and experiment with new software, keeping up with emerging trends in the industry. I actively seek opportunities to learn about different editing tools and techniques, whether it's Adobe Premiere Pro, DaVinci Resolve, or other popular software. This adaptability allows me to stay ahead of the curve and broaden my skill set.</p> <br><br>
+                
+                <h3><span>Constant Learning and Growth:</span></h3>
+                <p>The field of video and photo editing is ever-evolving, with new technologies and techniques emerging regularly. I understand the importance of continuous learning and growth to keep pace with industry advancements. I participate in online communities, watch tutorials, and engage in hands-on projects to further refine my skills. By embracing ongoing learning, I strive to push the boundaries of my creativity and deliver outstanding results.</p>
+            </div>
+    </div>
+
+<script>
+    const header = document.querySelector("header");
+window.addEventListener("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 100);
+});
+
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('open');
+};
+
+window.onscroll = () => {
+  menu.classList.remove('bx-x');
+  navlist.classList.remove('open');
+};
+
+
+</script>
+</body>
+</html>

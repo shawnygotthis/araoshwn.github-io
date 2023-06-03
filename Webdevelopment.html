@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio: Web Development</title>
+    <!--custom css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="sgt.png" type="image/x-icon">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* THE ROOT PARA SA COLOR FORMAT */
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --secont-color: #ccc;
+    --text-color: #fff;
+    --main-color: #215BF0;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+    </style>
+</head>
+<body>
+    <!--header design-->
+    <header>
+        <a href="index.html" class="logo">Shawn<span>Got</span>This.</a>
+
+    </header>
+    <div class="services-content">
+        <div class="box">
+            <div class="s-icons">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <h3><span>Journey of an Aspiring Web Developer: HTML, CSS, JavaScript, SQL, PHP, and Beyond!</span></h3>
+            <p>As a passionate individual with a keen interest in web development, I have embarked on a journey to become a proficient web developer. Armed with HTML, CSS, and basic JavaScript, along with a foundation in SQL and PHP, I am constantly expanding my knowledge and skills. My aspiration to learn and grow in this field extends to exploring popular frameworks like Vue.js and Laravel. Let's dive into my journey as an aspiring web developer and the technologies I am currently mastering.<br><br>
+
+                HTML, CSS, and Basic JavaScript:
+                I started my web development journey by learning the building blocks of the web: HTML, CSS, and basic JavaScript. HTML provided me with the foundation to structure web content, while CSS empowered me to style and enhance the visual appeal of websites. With basic JavaScript knowledge, I began to add interactivity and dynamic elements to my projects, such as form validation and simple animations. This trio forms the backbone of every web page and has given me a solid understanding of front-end development.<br><br>
+                
+                SQL and PHP:
+                To deepen my knowledge, I delved into the realm of databases and server-side scripting. SQL, a powerful language for managing and manipulating databases, allowed me to store and retrieve data efficiently. I gained hands-on experience in designing and querying databases, ensuring data integrity and security. Complementing my database skills, I explored PHP, a popular server-side scripting language. PHP enabled me to create dynamic web pages, handle form submissions, and interact with databases, enhancing the functionality of my web projects.</p><br> <br>
+            
+            <h3><span>Ongoing Learning and Growth:</span></h3>
+            <p>Web development is a dynamic field, continuously evolving with new technologies and frameworks. I understand the importance of staying updated and continuously expanding my knowledge. I actively participate in online communities, follow industry blogs, and engage in online courses and tutorials to learn emerging technologies and best practices. By embracing ongoing learning, I strive to enhance my skills and adapt to the ever-changing demands of the web development landscape.</p>
+            </div>
+    </div>
+ 
+
+<script>
+    const header = document.querySelector("header");
+window.addEventListener("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 100);
+});
+
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('open');
+};
+
+window.onscroll = () => {
+  menu.classList.remove('bx-x');
+  navlist.classList.remove('open');
+};
+
+
+</script>
+</body>
+</html>

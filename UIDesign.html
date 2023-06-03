@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio: UI Design</title>
+    <!--custom css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="sgt.png" type="image/x-icon">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* THE ROOT PARA SA COLOR FORMAT */
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --secont-color: #ccc;
+    --text-color: #fff;
+    --main-color: #215BF0;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+    </style>
+</head>
+<body>
+    <!--header design-->
+    <header>
+        <a href="index.html" class="logo">Shawn<span>Got</span>This.</a>
+
+    </header>
+    <div class="services-content">
+        <div class="box">
+            <div class="s-icons">
+                <i class='bx bx-devices'></i>
+            </div>
+            <h3><span>Embracing the World of UI Design: My Journey with Figma, Photoshop, and Beyond!</span></h3>
+            <p>In this digital age, user interface (UI) design plays a pivotal role in creating captivating and user-friendly experiences across various platforms. As a beginner in UI design, I have embarked on an exciting journey to learn and master the art of designing visually appealing and functional interfaces. Armed with basic skills in Figma, Photoshop, and a thirst for knowledge, I'm ready to dive into the world of UI design and explore its vast possibilities.<br><br>
+
+                <span>Discovering Figma:</span>
+                My journey began with the discovery of Figma, a powerful and collaborative design tool widely used in the industry. Figma's intuitive interface and cloud-based features quickly captured my attention. Through online tutorials and practical experimentation, I familiarized myself with Figma's essential tools and features, such as artboards, layers, and vector editing. I learned to create wireframes and prototypes, enabling me to visualize and communicate my design concepts effectively.<br><br>
+                
+                <span>Unleashing Creativity with Photoshop:</span>
+                As my confidence grew, I expanded my skill set to include Adobe Photoshop, a versatile and industry-standard software. Photoshop allowed me to delve deeper into the realm of visual design and gave me the ability to enhance and manipulate images, create stunning compositions, and refine user interfaces. I honed my skills in layer management, image editing, and utilizing various tools and filters to achieve desired effects. With Photoshop, I gained the power to create captivating visuals that truly reflect the essence of a brand or product.<br><br>
+                
+                <span>Exploring Beyond the Basics:</span>
+                While Figma and Photoshop provided me with a solid foundation, I recognized the need to broaden my knowledge and explore other aspects of UI design. I delved into the principles of color theory, typography, and layout design, understanding how these elements influence user perception and interaction. By staying up-to-date with current design trends, I familiarized myself with user experience (UX) design principles, ensuring that my UI designs not only looked visually appealing but also offered seamless navigation and intuitive interactions.</p><br><br>
+                <h3><span>Collaboration and Feedback:</span></h3>
+                <p> design is a collaborative process, and I actively sought opportunities to collaborate with fellow designers, developers, and stakeholders. I discovered the importance of gathering feedback and iterating on my designs based on user testing and stakeholder input. This iterative process allowed me to refine my designs and improve their usability, ultimately delivering a more impactful user experience.</p><br><br>
+ 
+        </div>
+    </div>
+<script>
+    const header = document.querySelector("header");
+window.addEventListener("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 100);
+});
+
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('open');
+};
+
+window.onscroll = () => {
+  menu.classList.remove('bx-x');
+  navlist.classList.remove('open');
+};
+
+
+</script>
+</body>
+</html>
